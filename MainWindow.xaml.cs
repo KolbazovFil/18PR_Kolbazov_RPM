@@ -37,20 +37,11 @@ namespace _18PR_Kolbazov_RPM
                 startTime = DateTime.Now; // Запоминаем время старта
             }
             timer.Start(); // Запускаем таймер
-            // Делаем кнопку Старт недоступной после запуска
-            StartTimerButton.IsEnabled = false;
-            PauseTimerButton.IsEnabled = true;
-            StopTimerButton.IsEnabled = true;
         }
         private void PauseTimerButton_Click(object sender, RoutedEventArgs e)    // Обработчик для кнопки Пауза
         {
             timer.Stop(); // Останавливаем таймер
             isPaused = true; // Устанавливаем флаг паузы
-
-            // Настраиваем доступность кнопок
-            StartTimerButton.IsEnabled = true;  // Кнопка Старт снова доступна
-            PauseTimerButton.IsEnabled = false; // Кнопка Пауза недоступна, пока таймер на паузе
-            StopTimerButton.IsEnabled = true;   // Кнопка Стоп все еще доступна
         }
         private void StopTimerButton_Click(object sender, RoutedEventArgs e)    // Обработчик для кнопки Стоп
         {
@@ -60,11 +51,6 @@ namespace _18PR_Kolbazov_RPM
             elapsedTime = TimeSpan.Zero; // Сбрасываем время
 
             TimerTextBlock.Text = "00:00:00"; // Сбрасываем текстовый блок
-
-            // Настраиваем доступность кнопок
-            StartTimerButton.IsEnabled = true;  // Кнопка Старт снова доступна
-            PauseTimerButton.IsEnabled = false; // Кнопка Пауза недоступна
-            StopTimerButton.IsEnabled = false;   // Кнопка Стоп недоступна после остановки таймера
         }
     }
 }
