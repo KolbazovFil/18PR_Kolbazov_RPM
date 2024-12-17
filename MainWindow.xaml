@@ -10,15 +10,15 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Разработчик: Колбазов Филипп Дионисович группы 2озИСИП-1623" HorizontalAlignment="Center" FontSize="24" Foreground="CadetBlue" 
                    FontFamily="Arial" VerticalAlignment="Center" Grid.Row="0"/>
         <TextBlock x:Name="TimerTextBlock" Text="00:00:00" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1"/>
-        <Button x:Name="StartTimerButton" Content="Старт" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Click="StartTimerButton_Click" 
+        <Button x:Name="StartTimerButton" Content="Старт" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Click="StartTimerButton_Click" 
                 Grid.Row="2" Background="#E0FFFF" BorderBrush="Gray" BorderThickness="3" Foreground="#4682B4" FontSize="16">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -29,7 +29,7 @@
             </Button.Template>
         </Button>
 
-        <Button x:Name="StopTimerButton" Content="Стоп" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80"  Height="30" Click="StopTimerButton_Click" 
+        <Button x:Name="StopTimerButton" Content="Стоп" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Click="StopTimerButton_Click" 
                 Grid.Row="4" Background="#E0FFFF" BorderBrush="Gray" BorderThickness="3" Foreground="#4682B4" FontSize="16">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -41,7 +41,7 @@
         </Button>
 
 
-        <Button x:Name="PauseTimerButton" Content="Пауза" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Click="PauseTimerButton_Click"
+        <Button x:Name="PauseTimerButton" Content="Пауза" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40" Click="PauseTimerButton_Click"
                 Grid.Row="3" Background="#E0FFFF" BorderBrush="Gray" BorderThickness="3" Foreground="#4682B4" FontSize="16">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
